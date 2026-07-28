@@ -48,27 +48,112 @@ h1{
     font-size:x-large;
     color: var(--dark);
 }
-/*
-.btn-primary {
-  background-color: var(--gold);
-  color: var(--dark);
-  border: none;
-  padding: 10px 15px;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
-.btn-primary:hover {
-  background-color: var(--dark);
-  color: var(--bg);
-}
-*/
 p{
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   font-style: normal;
 }
 
+/* FORM */
+form label{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
 
+.btn-pixel {
+  font-family: "Press Start 2P", system-ui, cursive;
+  font-size: 0.85rem;
+  background-color: #ecca8a;
+  color: #2C2C2C;
+  border: 2px solid #2C2C2C;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 4px 4px 0px #2C2C2C;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+.btn-pixel:hover {
+  background-color: #B53C3C;
+  color: #ffffff;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #2C2C2C;
+}
+
+/* Efecto al presionar el botón (Active) */
+.btn-pixel:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #2C2C2C;
+}
+
+/* FORTALEZAS */
+.pixel-card {
+  background: #b3a474;
+  border: 3px solid #2C2C2C;
+  border-radius: 10px;
+  padding: 20px 15px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  /* Transición suave al pasar el cursor */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pixel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 0px #2C2C2C;
+}
+
+/* Mantiene los GIFs de Pixel Art nítidos y sin desenfoque */
+.pixel-gif {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  image-rendering: pixelated; /* Evita que el navegador suavice los píxeles */
+  image-rendering: crisp-edges;
+}
+
+.pixel-card h3 {
+  font-family: "Press Start 2P", system-ui, cursive;
+  font-size: 0.85rem;
+  color: #2C2C2C;
+  margin: 10px 0 5px 0;
+}
+
+.pixel-card p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  color: #555555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* FORM */
+.pixel-form .form-control {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #ffffff;
+  color: #2C2C2C;
+  border: 2px solid #2C2C2C;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* Efecto al seleccionar/hacer clic en un campo */
+.pixel-form .form-control:focus {
+  border-color: #B53C3C;
+  box-shadow: 0 0 0 0.25rem rgba(181, 60, 60, 0.25);
+  outline: none;
+}
+
+.pixel-form label {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  color: #2C2C2C;
+}
