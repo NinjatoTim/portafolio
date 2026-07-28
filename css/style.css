@@ -75,7 +75,6 @@ form label{
   cursor: pointer;
 }
 
-/* Efecto al pasar el cursor (Hover) */
 .btn-pixel:hover {
   background-color: #B53C3C;
   color: #ffffff;
@@ -91,7 +90,7 @@ form label{
 
 /* FORTALEZAS */
 .pixel-card {
-  background: #b3a474;
+  background: #c2b99a;
   border: 3px solid #2C2C2C;
   border-radius: 10px;
   padding: 20px 15px;
@@ -111,12 +110,11 @@ form label{
   box-shadow: 4px 4px 0px #2C2C2C;
 }
 
-/* Mantiene los GIFs de Pixel Art nítidos y sin desenfoque */
 .pixel-gif {
   width: 64px;
   height: 64px;
   object-fit: contain;
-  image-rendering: pixelated; /* Evita que el navegador suavice los píxeles */
+  image-rendering: pixelated; 
   image-rendering: crisp-edges;
 }
 
@@ -145,7 +143,6 @@ form label{
   padding: 10px;
 }
 
-/* Efecto al seleccionar/hacer clic en un campo */
 .pixel-form .form-control:focus {
   border-color: #B53C3C;
   box-shadow: 0 0 0 0.25rem rgba(181, 60, 60, 0.25);
@@ -156,4 +153,37 @@ form label{
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   color: #2C2C2C;
+}
+
+/* FOOTER */
+.pixel-footer {
+  background-color: #2C2C2C;
+  color: #ffffff;
+  border-top: 4px solid #ecca8a; /* Línea de acento dorada/retro */
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/* Enlaces e iconos de redes sociales */
+.footer-socials a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 12px;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Efecto hover retro en los iconos */
+.footer-socials a:hover {
+  color: #ecca8a;
+  transform: translateY(-3px);
+}
+
+/* Texto del footer */
+.footer-text {
+  font-size: 0.85rem;
+  color: #d1d1d1;
+}
+
+.footer-text i {
+  font-size: 0.8rem;
 }
