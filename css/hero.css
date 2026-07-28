@@ -1,0 +1,117 @@
+@media(max-width:768px){
+
+:root{
+
+    --bg:#F4E9D8;
+    --red:#B53C3C;
+    --dark:#2E2A2A;
+    --gold:#C9A257;
+
+}
+
+
+
+/* ID CARD*/
+.content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.photo img{
+    width:180px;
+}
+
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+}
+
+.id-card{
+
+    width:min(90%,52%);
+    background:#F6EBD6;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.3);
+
+}
+
+.header{
+    background:#bb3f3f;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+
+    font-family:"Press Start 2P", system-ui;
+}
+
+.content{
+    display:flex;
+    gap:30px;
+    padding:30px;
+    align-items:center;
+}
+
+.photo img{
+    width:250px;
+    image-rendering:pixelated;
+}
+
+.info{
+    flex:1;
+}
+
+.info p{
+    font-size:1.2rem;
+    margin:15px 0;
+    font-family:"Silkscreen", sans-serif;
+}
+
+.info span{
+    font-weight:700;
+    color:#913232;
+}
+
+.footer{
+    background:#2e2c2c;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-family:"Press Start 2P", system-ui;
+    font-weight: 200;
+    font-size: small;
+}
+
+/* Animaciones */
+.info p{
+    opacity:0;
+    transform:translateX(20px);
+
+    animation:show .6s forwards;
+}
+
+.info p:nth-child(1){
+    animation-delay:.4s;
+}
+
+.info p:nth-child(2){
+    animation-delay:.8s;
+}
+
+.info p:nth-child(3){
+    animation-delay:1.2s;
+}
+
+.info p:nth-child(4){
+    animation-delay:1.6s;
+}
+
+.info p:nth-child(5){
+    animation-delay:2s;
+}

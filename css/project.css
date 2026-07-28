@@ -1,0 +1,42 @@
+/* Estilos básicos para la estructura */
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* 2 columnas en pantallas medianas/grandes */
+@media (min-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.secondary-graphics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.secondary-graphics img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.main-video video {
+  border-radius: 8px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+}

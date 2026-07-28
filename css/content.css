@@ -1,0 +1,27 @@
+.content-card{
+    height:100%;
+    background:#fff;
+    border:2px solid #2B2626;
+    border-radius:15px;
+    padding:20px;
+}
+
+.content-card img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.content-type{
+    display:inline-block;
+    margin-bottom:10px;
+    padding:4px 12px;
+    background:#F2E7D6;
+    border-radius:20px;
+    font-size:.9rem;
+}
+
+.img-conten{
+    width: 300px;
+}

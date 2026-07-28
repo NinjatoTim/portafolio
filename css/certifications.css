@@ -1,0 +1,28 @@
+
+
+.certificaciones h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+.cert-item {
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.cert-item h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.1rem;
+}
+
+.cert-item .emisor {
+  margin: 0 0 0.8rem 0;
+  color: #ac4c4c;
+  font-size: 0.9rem;
+}
+
+.cert-item a {
+  color: #0066cc;
+  font-size: 0.9rem;
+}

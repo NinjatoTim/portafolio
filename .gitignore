@@ -1,0 +1,5 @@
+# Ignorar el video pesado específico
+img/processed_frame_2025_04_04_09_27_28.avi
+
+# O ignorar todos los archivos .avi
+*.avi
